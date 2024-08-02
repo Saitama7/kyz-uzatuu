@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "gulp build",
+        "build": "git config --global user.email \"djkaira7@gmail.com\" & git config --global user.name \"DjKai\" & gulp build",
         "predeploy": "npm run build",
         "deploy": "rm -rf node_modules/gh-pages/.cache && gh-pages -d dist"
     },
