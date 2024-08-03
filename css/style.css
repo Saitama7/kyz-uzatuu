@@ -37,6 +37,33 @@
     font-display: swap;
 }
 
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .caveat {
+    font-family: "Caveat", cursive !important;
+    font-optical-sizing: auto !important;
+    font-weight: 400 !important;
+    font-style: italic !important;
+  }
+  
+
+.montserrat {
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 300;
+font-style: italic;
+}
+
 @keyframes flash {
 	0% { opacity: 1; } 
 	50% { opacity: .3; } 
@@ -208,6 +235,11 @@ body {
     z-index: 1000;
 }
 
+.back-header-smaller {
+    font-size: 30px;
+    line-height: 53px;
+}
+
 .text-1,
 .text-2,
 .text-3 {
@@ -217,6 +249,13 @@ body {
     line-height: 25px;
     color: var(--dark-brown);
     z-index: 1000;
+}
+
+.caveat .text-1,
+.caveat .text-2,
+.caveat .text-3 {
+    font-size: 25px;
+    line-height: 25px;
 }
 
 .text-1 {
@@ -250,6 +289,10 @@ body {
     font-size: 20px;
     text-align: center;
     color: var(--dark-brown);
+}
+
+#myAudio {
+    display: none;
 }
 
 @media (max-width: 600px) {
