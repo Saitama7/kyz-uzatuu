@@ -16,7 +16,7 @@
     const frontAddress = document.getElementById('front-address');
     const invite = document.getElementById('invite');
     const card = document.getElementById('card');
-
+    const picClick = document.getElementById('pic-click');
 
     if (nameValue && !isKG) {
         if (nameValue.length > MAX_LENGTH_FOR_LARGE_FONT) {
@@ -45,6 +45,7 @@
 
     if (isKG) {
         card.classList.add('caveat');
+        picClick.classList.add('caveat');
         sex.textContent = 'Кымбаттуу туугандар';
         name.textContent = 'жана достор';
         text1.textContent = 'Биздин сүйүктүү Эльвира кызыбыздын “Кыз узатуу” тоюна чакырабыз. Той 2024-жылдын 30-августунда саат 16:00дө Resto Son-Kol ресторанында өтөт.';
@@ -52,7 +53,8 @@
         text3.textContent = 'Дареги: 7-апрель көчөсү, 1д/1';
         frontAddress.textContent = '7-апрель көчөсү, 1д/1';
         footerText.innerHTML = '<span>Урматтоо менен, <br /> Мирзада</span>';
-        invite.textContent = 'Кыз yзатууга чакыруу'
+        invite.textContent = 'Кыз yзатууга чакыруу';
+        picClick.innerHTML = 'Сүрөттү басыңыз<span class="hint-icon"></span>';
     }
 
 
@@ -68,5 +70,9 @@
         isPlaying = true;
     }
 
-    $('#card').click(() => playAudio())
+    $('#card').click(() => {
+        playAudio();
+        $('#form').slideDown(5000);
+        $('#animations').css({ display: 'block' })
+    });
 })();

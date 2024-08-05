@@ -14,7 +14,7 @@
 </head>
 <body>
     <main>
-        <p class="hint">Нажмите на картинку<span class="hint-icon"></span></p>
+        <p class="hint" id="pic-click">Нажмите на картинку<span class="hint-icon"></span></p>
         <div class="container">
             <div class="card" id="card">
                 <div class="front">
@@ -53,14 +53,49 @@
                         </p>
                     </footer>
                     <img width="600" height="870" src="img/bg-back.png" alt="">
+                    <iframe class="frame" id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSfsldH5Y0aYy6I26CwWTfBfk36pIiNRp9Lka1EOFTu-otJNhg/viewform?embedded=true" width="667" height="890" frameborder="0" marginheight="0" marginwidth="0" style="margin-left: -34px; margin-top: -20px;">Loading…</iframe>
                 </div>
                 <audio id="myAudio" autoplay loop>
                     <source src="audio/lalaland.mp3" type="audio/mp3">
                 </audio>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfsldH5Y0aYy6I26CwWTfBfk36pIiNRp9Lka1EOFTu-otJNhg/viewform?embedded=true" width="640" height="890" frameborder="0" marginheight="0" marginwidth="0" style="margin-left: -20px">Loading…</iframe>
             </div>
         </div>
     </main>
+
+    <div id="animations">
+        <!-- Hearts animation -->
+        <div class="animation heart" style="top: 10%; left: 20%; animation-delay: 0s;">
+            <img width="50" height="50" src="img/heart1.png" />
+        </div>
+        <div class="animation heart" style="top: 30%; left: 70%; animation-delay: 2s;">
+            <img width="50" height="50" src="img/heart2.png" />
+        </div>
+        <div class="animation heart" style="top: 50%; left: 40%; animation-delay: 4s;">
+            <img width="50" height="50" src="img/heart3.png" />
+        </div>
+
+        <!-- Confetti animation -->
+        <div class="animation confetti" style="top: 20%; left: 30%; animation-delay: 1s;">
+            <img width="50" height="50" src="img/confetti1.png" />
+        </div>
+        <div class="animation confetti" style="top: 40%; left: 80%; animation-delay: 3s;">
+            <img width="50" height="50" src="img/confetti2.png" />
+        </div>
+        <div class="animation confetti" style="top: 60%; left: 50%; animation-delay: 5s;">
+            <img width="50" height="50" src="img/confetti3.png" />
+        </div>
+
+        <!-- Flowers animation -->
+        <div class="animation flower" style="top: 15%; left: 60%; animation-delay: 1.5s;">
+            <img width="50" height="50" src="img/flower3.png" />
+        </div>
+        <div class="animation flower" style="top: 35%; left: 90%; animation-delay: 3.5s;">
+            <img width="30" height="30" src="img/flower2.png" />
+        </div>
+        <div class="animation flower" style="top: 55%; left: 20%; animation-delay: 5.5s;">
+            <img width="60" height="60" src="img/flower1.png" />
+        </div>
+    </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.flip.min.js"></script>

@@ -98,6 +98,10 @@ body {
     animation: flash linear 1s infinite;
 }
 
+.caveat.hint {
+    font-size: 30px;
+}
+
 .hint-icon {
     position: relative;
 }
@@ -322,4 +326,39 @@ body {
     .hint-icon::after {
         top: 7px;
     }
+}
+
+iframe .DqBBlb {
+    display: none;
+}
+
+.animation {
+    position: absolute;
+    animation: float 10s infinite ease-in-out;
+}
+.heart {
+    width: 20px;
+    height: 20px;
+}
+.confetti {
+    width: 10px;
+    height: 10px;
+}
+.flower {
+    width: 20px;
+    height: 20px;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+#animations {
+    display: none;
 }
