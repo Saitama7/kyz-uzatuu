@@ -366,6 +366,7 @@ iframe .DqBBlb {
 #main {
     display: none;
     animation:fadeIn 1s linear;
+    overflow-x: hidden;
 }
 
 @keyframes fadeIn {
