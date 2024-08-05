@@ -316,7 +316,7 @@ body {
 
 @media (max-width: 450px) {
     .card {
-        transform: scale(0.5);
+        transform: scale(0.7);
     }
 
     .hint {

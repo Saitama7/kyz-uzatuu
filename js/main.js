@@ -62,14 +62,14 @@
     setTimeout(() => {
         $("#main").css({ display: 'block' });
         $("#loader").css({ display: 'none' });
-    }, 2000);
+    }, 2500);
 })();
 
 (() => {
     const song = document.getElementById('myAudio');
 
     function playAudio() {
-        song.volume = 0.2;
+        song.volume = 0.7;
         song.play();
         isPlaying = true;
     }
