@@ -59,6 +59,10 @@
 
 
     $("#card").flip();
+    setTimeout(() => {
+        $("#main").css({ display: 'block' });
+        $("#loader").css({ display: 'none' });
+    }, 2000);
 })();
 
 (() => {
